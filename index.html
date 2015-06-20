@@ -4,27 +4,46 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background: url("save.png");
     background-position: center 0px;
     background-repeat: no-repeat;
     background-color: #021;
-    color: #210;
+    color: #56271b;
 }
 .wrapper {
     width: 556px;
     margin: 0 auto;
 }
 .spacing {
-    height: 670px;
+    height: 686px;
     width: 100%;
     clear: both;
 }
-.navigation {
+.content {
     background: white;
-    margin-right: 1px;
-    margin-left: 1px;
+    margin: 0 1px;
     padding: 10px;
+}
+.navigation {
+}
+.navigation ul {
+    list-style-type: none;
+    text-align: center;
+}
+.navigation ul li { display: inline; }
+.navigation ul li a {
+    text-decoration: none;
+    padding: .2em 1em;
+    color: white;
+}
+.navigation ul li a:hover {
+    background: white;
+    color: #56271b;
 }
     </style>
 </head>
@@ -35,12 +54,25 @@ body {
         <br/>
     </div>
     <div class="navigation">
-            <h3>Are you coming?</h3>
-            <h3>Registry</h3>
-            <h3>Directions</h3>
-            <h3>Accomodations</h3>
-            <h3>Suggest a Song<h3>
-            <p>What's your jam?</p>
+        <ul>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#registry">Registry</a></li>
+            <li><a href="#directions">Directions</a></li>
+            <li><a href="#accommodations">Accommodations</a></li>
+            <li><a href="#suggestsong">Suggest a Song</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h3 name="rsvp">RSVP</h3>
+        <p>hey a whole bunch of text on the page asking you to RSVP</p>
+        <h3 name="registry">Registry</h3>
+        <p>Or maybe buy something off the registry</p>
+        <h3 name="directions">Directions</h3>
+        <p>Or figure out how to get there</p>
+        <h3 name="accommodations">Accommadtions</h3>
+        <p>Or figure out a hotel</p>
+        <h3 name="suggestsong">Suggest a Song</h3>
+        <p>Or suggest a song you want to dance too</p>
     </div>
 </div>
 </body>
